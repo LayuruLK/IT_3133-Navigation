@@ -1,8 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import { PaperProvider } from 'react-native-paper';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import { PaperProvider, Text, Divider } from 'react-native-paper';
 export default function Home() {
+    const navigation = useNavigation();
     <PaperProvider>
-        <View>
+        <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.scrollView}>
              <Text variant="headlineLarge">Headline Large</Text>   
              <Divider/>
              <Text variant="bodyMedium" style={styles.body}>
@@ -20,5 +23,7 @@ export default function Home() {
 
                     </Text>
         </View>
+        </ScrollView>
     </PaperProvider>
+    );
 }
