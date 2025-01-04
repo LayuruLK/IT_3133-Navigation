@@ -9,6 +9,12 @@ export default function App() {
   return (
     <SafeAreaProvider>
      <NavigationContainer>
+     <Stack.Navigator initialRouteName='home'
+          screenOptions={{
+            headerStyle: { backgroundColor: '#e2bee2' },
+          }}
+        >
+      </Stack.Navigator>
     </NavigationContainer> 
     </SafeAreaProvider>
   );
