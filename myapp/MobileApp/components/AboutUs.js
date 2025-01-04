@@ -21,6 +21,9 @@ export default function AboutUs() {
                     </Button>
                     <Button mode="outlined" onPress={() => navigation.popTo('home')}>Go to Home</Button>
                     <Button  mode="outlined" onPress={() => navigation.popToTop()}>Go to Top Screen</Button>
+                    <View style={styles.footer}>
+                        <Text>MyApp © 2024</Text>
+                    </View>
             </View>         
         </PaperProvider>
     );
