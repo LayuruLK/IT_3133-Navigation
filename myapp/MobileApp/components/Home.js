@@ -1,8 +1,9 @@
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, View, ScrollView } from 'react-native';
-import { PaperProvider, Text, Divider } from 'react-native-paper';
+import { PaperProvider, Text, Divider, Button } from 'react-native-paper';
 export default function Home() {
     const navigation = useNavigation();
+    return(
     <PaperProvider>
         <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollView}>
@@ -28,8 +29,8 @@ export default function Home() {
                     <Button icon="camera" mode="outlined" onPress={()=>navigation.navigate('aboutus')}>
                         About Us
                     </Button>
+            </ScrollView>
         </View>
-        </ScrollView>
     </PaperProvider>
     );
 }
