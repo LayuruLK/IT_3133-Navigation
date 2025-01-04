@@ -14,6 +14,9 @@ export default function App() {
             headerStyle: { backgroundColor: '#e2bee2' },
           }}
         >
+          <Stack.Screen name='home' component={Home} options={{ title: "Welcome" }} />
+          <Stack.Screen name='contact' component={ContactUs} options={{ title: "Contact Us" }} />
+          <Stack.Screen name='aboutus' component={AboutUs} options={{ title: "About Us" }} />
       </Stack.Navigator>
     </NavigationContainer> 
     </SafeAreaProvider>
