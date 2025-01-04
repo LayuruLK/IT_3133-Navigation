@@ -14,7 +14,7 @@ export default function ContactUs() {
             >
             <ScrollView contentContainerStyle={styles.scrollView}>
             <View style={styles.container}>
-           <View style={styles.header}>
+            <View style={styles.header}>
                 <Text variant="headlineLarge">Contact Us</Text>
                 <Divider />
             </View> 
@@ -43,12 +43,13 @@ export default function ContactUs() {
                                     About Us</Button>
                             </View>
                             <Text>{name}</Text>
-                            </View>
-                            <View style={styles.footer}>
-                            <Text>MyApp © 2024</Text>
-                            </View>
                         </View>
-        </KeyboardAvoidingView>                
+                        <View style={styles.footer}>
+                            <Text>MyApp © 2024</Text>
+                        </View>
+                    </View>
+                </ScrollView>
+            </KeyboardAvoidingView>                
         </PaperProvider>
 
     );
