@@ -4,7 +4,7 @@ import { PaperProvider, Text, Divider, Button } from 'react-native-paper';
 export default function AboutUs() {
     return(
         <PaperProvider>
-             <ScrollView contentContainerStyle={styles.scrollView}></ScrollView>
+             <ScrollView contentContainerStyle={styles.scrollView}>
              <View style={styles.container}>
                 <Text variant="headlineLarge">History</Text>
                 <Divider />
