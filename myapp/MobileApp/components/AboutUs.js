@@ -1,9 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import { PaperProvider } from 'react-native-paper';
+import { StyleSheet, View, ScrollView, Image } from 'react-native';
+import { PaperProvider, Text, Divider, Button } from 'react-native-paper';
 export default function AboutUs() {
     return(
         <PaperProvider>
-           <View style={styles.container}>
+             <ScrollView contentContainerStyle={styles.scrollView}></ScrollView>
+             <View style={styles.container}>
                 <Text variant="headlineLarge">History</Text>
                 <Divider />
                 <View style={styles.imagepad}>
@@ -24,7 +26,8 @@ export default function AboutUs() {
                     <View style={styles.footer}>
                         <Text>MyApp © 2024</Text>
                     </View>
-            </View>         
+            </View>  
+        </ScrollView>       
         </PaperProvider>
     );
 }
