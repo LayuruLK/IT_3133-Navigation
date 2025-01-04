@@ -1,7 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 import { Platform } from 'react-native';
-import { PaperProvider } from 'react-native-paper';
 import { StyleSheet, View, ScrollView, KeyboardAvoidingView } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 export default function ContactUs() {
@@ -10,7 +9,8 @@ export default function ContactUs() {
     return(
         <PaperProvider>
             <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.keyboardAvoidingView}
+                behavior={Platform.OS === 'ios' ? 'padding' : 'height'} 
+                style={styles.keyboardAvoidingView}
             >
             <ScrollView contentContainerStyle={styles.scrollView}>
             <View style={styles.container}>
@@ -83,7 +83,8 @@ const styles = StyleSheet.create({
         marginBottom: 7
     },
     scrollView: {
-        flexGrow: 1, 
+        flexGrow: 1,
+    }, 
     keyboardAvoidingView: {
         flex: 1, 
       }
