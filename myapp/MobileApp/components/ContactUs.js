@@ -1,8 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
 import { PaperProvider } from 'react-native-paper';
+import { StyleSheet, View, ScrollView, KeyboardAvoidingView } from 'react-native';
+import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 export default function ContactUs() {
     return(
         <PaperProvider>
+            <ScrollView contentContainerStyle={styles.scrollView}>
+            <View style={styles.container}>
            <View style={styles.header}>
                 <Text variant="headlineLarge">Contact Us</Text>
                 <Divider />
@@ -20,3 +24,37 @@ export default function ContactUs() {
 
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'column',
+        backgroundColor: '#fff',
+        justifyContent: 'space-between',
+        padding: 10
+    },
+    header: {
+        flex: 3,
+        width: "100%",
+        alignItems: 'center',
+        padding: 10,
+        marginBottom: 10
+    },
+    body: {
+        flex: 5,
+        width: "100%"
+    },
+    footer: {
+        flex: 2,
+        width: "100%",
+        alignItems: 'center'
+    },
+    input: {
+        padding: 8,
+        marginBottom: 7
+    },
+    scrollView: {
+        flexGrow: 1, 
+    keyboardAvoidingView: {
+        flex: 1, 
+      }
+});
