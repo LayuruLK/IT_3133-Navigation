@@ -19,7 +19,7 @@ export default function AboutUs() {
                         The permanent site of the University of Vavuniya is located about ten kilometers away from Vavuniya town along the Vavuniya Mannar Road at Sopalapuliyankulam, Pampaimadu. The university owns one hundred and ninety five (195) acres of land, and it is a residential university. The university maintains a forest pocket and two minor tanks within this land area. The iconic landscape contributes to the university’s signature to keep generations connected to the University of Vavuniya. It paves the way to get a new collegiate experience for our existing and prospective students.
                     </Text>
                     <Button icon="camera" mode="outlined" onPress={()=>navigation.push('aboutus')}>
-                     call agin
+                     call again
                     </Button>
                     <Button mode="outlined" onPress={() => navigation.popTo('home')}>Go to Home</Button>
                     <Button  mode="outlined" onPress={() => navigation.popToTop()}>Go to Top Screen</Button>
