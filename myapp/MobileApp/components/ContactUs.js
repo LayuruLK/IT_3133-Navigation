@@ -38,7 +38,12 @@ export default function ContactUs() {
                                 <Button mode='contained' onPress={()=>navigation.navigate('aboutus')}>
                                     About Us</Button>
                             </View>
-                </View>
+                            <Text>{name}</Text>
+                            </View>
+                            <View style={styles.footer}>
+                            <Text>MyApp © 2024</Text>
+                            </View>
+                        </View>
         </PaperProvider>
 
     );
