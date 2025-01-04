@@ -1,8 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
 import { PaperProvider } from 'react-native-paper';
 import { StyleSheet, View, ScrollView, KeyboardAvoidingView } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 export default function ContactUs() {
+    const [name, setName] = useState();
+    const navigation = useNavigation();
     return(
         <PaperProvider>
             <ScrollView contentContainerStyle={styles.scrollView}>
